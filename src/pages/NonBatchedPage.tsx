@@ -47,13 +47,7 @@ function NonBatchedContent({ loadedMeshes }: { loadedMeshes: Group[] }) {
     });
   });
 
-  return (
-    <>
-      {meshObjects.map((mesh, i) => (
-        <primitive key={i} object={mesh} />
-      ))}
-    </>
-  );
+  return meshObjects.map((mesh, i) => <primitive key={i} object={mesh} />);
 }
 
 function NonBatchedPage() {

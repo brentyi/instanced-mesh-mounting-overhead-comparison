@@ -44,9 +44,7 @@ function InstancedMesh2Content({ loadedMeshes }: { loadedMeshes: Group[] }) {
     });
   });
 
-  return meshObjects === null
-    ? null
-    : meshObjects.map((m, i) => <primitive key={i} object={m} />);
+  return meshObjects.map((m, i) => <primitive key={i} object={m} />);
 }
 
 function InstancedMesh2Page() {
